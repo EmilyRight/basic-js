@@ -23,8 +23,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   for (let i = 0; i < names.length; i++) {
       for (let j = i + 1; j < names.length; j++)
           if (names[i] === names[j]) names[j] = names[i] + `(${count++})`;
-      count = 1;
-  }
+      count = 1; }
   return names;
 }
 
